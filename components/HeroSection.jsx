@@ -6,17 +6,17 @@ import { BiSolidMessageDetail } from "react-icons/bi";
 
 const HeroSection = () => {
     return (
-        <div className="w-full bg-purple text-white p-5 rounded-md mb-6 flex max-xl:flex-wrap gap-4 z-[10]">
+        <div className="w-full bg-purple text-white p-3 lg:p-5 rounded-md mb-6 flex max-xl:flex-wrap gap-4 z-[10]">
             <div className="w-8 h-8 bg-gray  rounded-full flex items-center justify-center mt-2">
                 <BsArrowLeft className="text-black text-xl" />
             </div>
             <div className="w-full">
-                <div className="flex flex-row flex-wrap justify-between">
-                    <h1 className="text-white text-sm sm:text-[28px] font-[700] mb-4">
+                <div className="flex flex-col lg:flex-row justify-between">
+                    <h1 className="text-white text-xl sm:text-[28px] font-[700] mb-4">
                         School November Tasks
                     </h1>
-                    <div className="flex h-[50px] items-center gap-4 mb-4 lg:my-0">
-                        <div className="flex flex-col gap-1 items-end">
+                    <div className="flex h-[50px] items-center gap-2 lg:gap-4 mb-4 lg:my-0">
+                        <div className="flex flex-col gap-1 lg:items-end">
                             <span className="text-xs sm:text-base font-semibold">
                                 Centered Martial Arts
                             </span>
@@ -24,11 +24,10 @@ const HeroSection = () => {
                                 Sunnyavle, Ca
                             </span>
                         </div>
-                        <div className="bg-white rounded-xl h-[50px] w-[50px] flex items-center justify-center">
+                        <div className="bg-white rounded-xl h-[40px] w-[40px] lg:h-[50px] lg:w-[50px] flex items-center justify-center">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="40"
-                                height="40"
+                                className="w-6 lg:w-10"
                                 viewBox="0 0 44 44"
                                 fill="none"
                             >
@@ -83,7 +82,7 @@ const HeroSection = () => {
                 <p className="text-gray text-xs md:text-base">
                     Created by Instructor Day on November 31, 2022
                 </p>
-                <div className="flex flex-col lg:flex-row justify-between mt-6">
+                <div className="flex flex-col lg:flex-row gap-4 xl:gap-0 lg:justify-between mt-6">
                     <div className="flex gap-4 items-center flex-wrap">
                         <div className="flex">
                             <div className="bg-gray rounded-full w-8 h-8 xl:w-10 xl:h-10 border-2 border-light-purple"></div>

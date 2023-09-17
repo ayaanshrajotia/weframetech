@@ -55,7 +55,7 @@ const Navbar = () => {
                         <div className="relative w-6 h-6">
                             <Image
                                 src={"/images/flag.png"}
-                                fill
+                                fill sizes="100"
                                 className="absolute w-full h-full"
                                 alt="flag"
                             />

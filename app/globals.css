@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.sidebar::-webkit-scrollbar,
 .card-list::-webkit-scrollbar,
 .main::-webkit-scrollbar {
     display: none;
@@ -17,10 +16,6 @@
         rgba(41, 148, 251, 1) 32%,
         rgba(0, 212, 255, 1) 76%
     );
-}
-
-.close {
-    
 }
 
 .custom-card {

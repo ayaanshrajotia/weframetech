@@ -1,9 +1,9 @@
 import React from "react";
-import HeroSection from "./HeroSection";
-import CardList from "./CardList";
+const HeroSection = dynamic(() => import("../components/HeroSection"));
 import { BiPlusMedical } from "react-icons/bi";
 import Card from "./Card";
 import CustomCard from "./CustomCard";
+import dynamic from "next/dynamic";
 
 const MainSection = () => {
     return (
@@ -29,13 +29,16 @@ const MainSection = () => {
                                 "Create sign up sheet for holiday student/parent conferences."
                             }
                             color={"#FFAB2D"}
+                            width={"30%"}
                         />
+
                         <Card
-                            title={"Instructpr Meeting"}
+                            title={"Instructor Meeting"}
                             description={
                                 "Plan holiday demonstration program. Create outline."
                             }
                             color={"#e328af"}
+                            width={"40%"}
                         />
                         <Card
                             title={"Database"}
@@ -43,6 +46,7 @@ const MainSection = () => {
                                 "Determine how many boards need to be ordered for testing and demo."
                             }
                             color={"#38E25D"}
+                            width={"20%"}
                         />
                     </div>
                 </div>
@@ -56,20 +60,23 @@ const MainSection = () => {
                             <BiPlusMedical className="text-violet" />
                         </div>
                     </div>
-                    <div className="card-list flex flex-row lg:flex-col max-lg:overflow-x-scroll gap-4 h-[220px]">
+                    <div className="card-list flex flex-row lg:flex-col max-lg:overflow-x-scroll gap-4 max-md:h-[220px] max-lg:h-[280px]">
                         <Card
-                            title={"Important"}
+                            title={"Video"}
                             description={
-                                "Create sign up sheet for holiday student/parent conferences."
+                                "Create sparring tutorial video for the weekly class."
                             }
-                            color={"#FFAB2D"}
+                            color={"#5ecfff"}
+                            background={"bg-[#5ecfff"}
+                            width={"90%"}
                         />
                         <CustomCard
                             title={"Bugs Fixing"}
                             description={
                                 "Payment gateway needs reauthorization."
                             }
-                            color={"#e328af"}
+                            color={"#FF4A55"}
+                            width={"100%"}
                         />
                     </div>
                 </div>
@@ -85,25 +92,26 @@ const MainSection = () => {
                     </div>
                     <div className="card-list flex flex-row lg:flex-col overflow-x-scroll gap-4">
                         <Card
-                            title={"Important"}
+                            title={"Bugs Fixing"}
                             description={
-                                "Create sign up sheet for holiday student/parent conferences."
+                                "Action Button needed for Google Maps visits."
                             }
-                            color={"#FFAB2D"}
-                        />
-                        <Card
-                            title={"Instructpr Meeting"}
-                            description={
-                                "Plan holiday demonstration program. Create outline."
-                            }
-                            color={"#e328af"}
+                            color={"#FF4A55"}
+                            width={"100%"}
                         />
                         <Card
                             title={"Database"}
-                            description={
-                                "Determine how many boards need to be ordered for testing and demo."
-                            }
+                            description={"Update new insturctor photos."}
                             color={"#38E25D"}
+                            width={"100%"}
+                        />
+                        <Card
+                            title={"Instructor Meeting"}
+                            description={
+                                "Review/correct yllow belt techniques."
+                            }
+                            color={"#e328af"}
+                            width={"100%"}
                         />
                     </div>
                 </div>

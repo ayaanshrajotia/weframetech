@@ -1,9 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
-import Card from "@/components/Card";
-import CardList from "@/components/CardList";
-import { BiPlusMedical } from "react-icons/bi";
-import HeroSection from "@/components/HeroSection";
 import MainSection from "@/components/MainSection";
 
 export default function Home() {

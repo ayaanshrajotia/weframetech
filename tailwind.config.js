@@ -21,6 +21,7 @@ module.exports = {
             orange: "#FFAB2D",
             pink: "#e328af",
             green: "#38E25D",
+            red: "#FF4A55",
         },
         fontFamily: {
             cairo: ["Cairo", "sans-serif"],

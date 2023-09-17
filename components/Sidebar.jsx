@@ -54,7 +54,7 @@ const Sidebar = () => {
                 )}
             </div>
             {/* Main Menus */}
-            <div className="mt-4 max-md:overflow-y-scroll h-full">
+            <div className="mt-4 h-full">
                 <h2 className="uppercase text-white text-sm mb-4 pl-8 tracking-wider">
                     Main Menu
                 </h2>
