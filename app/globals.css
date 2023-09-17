@@ -1,27 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.sidebar::-webkit-scrollbar,
+.card-list::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+    display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.banner {
+    background: rgb(41, 148, 251);
+    background: linear-gradient(
+        124deg,
+        rgba(41, 148, 251, 1) 32%,
+        rgba(0, 212, 255, 1) 76%
+    );
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.close {
+    
+}
+
+.custom-card {
+    box-shadow: rgb(0, 0, 0) 0px 7px 29px 0px;
 }
